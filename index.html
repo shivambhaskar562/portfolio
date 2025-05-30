@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivam Bhaskar | Java Developer</title>
-    <meta name="description" content="Java Developer specializing in Spring Boot, REST APIs, and SQL. Passionate about building efficient, scalable applications.">
+    <meta name="description"
+        content="Java Developer specializing in Spring Boot, REST APIs, and SQL. Passionate about building efficient, scalable applications.">
     <!-- Preload important resources -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        as="style">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary-color: #3498db;
@@ -23,40 +27,40 @@
             --light-color: #ecf0f1;
             --dark-color: #2c3e50;
         }
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             color: #333;
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
+
         .navbar {
             background-color: var(--secondary-color);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         .navbar.scrolled {
             padding: 10px 0;
         }
-        
+
         .navbar-brand {
             font-weight: 700;
             color: white !important;
         }
-        
+
         .nav-link {
             color: white !important;
             font-weight: 500;
             margin: 0 10px;
             transition: color 0.3s ease;
         }
-        
+
         .nav-link:hover {
             color: var(--primary-color) !important;
         }
-        
+
         .hero {
             background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
             color: white;
@@ -65,7 +69,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -76,14 +80,14 @@
             background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
             opacity: 0.5;
         }
-        
+
         .hero h1 {
             font-weight: 700;
             margin-bottom: 20px;
             position: relative;
             animation: fadeInDown 1s ease;
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             max-width: 700px;
@@ -91,35 +95,40 @@
             position: relative;
             animation: fadeIn 1.5s ease;
         }
-        
+
+        .hero .btn {
+            position: relative;
+            z-index: 10;
+        }
+
         .btn-primary {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary:hover {
             background-color: #2980b9;
             border-color: #2980b9;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         .btn-outline-light {
             margin-left: 10px;
             transition: all 0.3s ease;
         }
-        
+
         .btn-outline-light:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         section {
             padding: 80px 0;
             position: relative;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 60px;
@@ -127,7 +136,7 @@
             position: relative;
             animation: fadeIn 1s ease;
         }
-        
+
         .section-title:after {
             content: '';
             display: block;
@@ -137,7 +146,7 @@
             margin: 15px auto;
             animation: fadeInLeft 1s ease;
         }
-        
+
         .skill-card {
             border: none;
             border-radius: 10px;
@@ -149,12 +158,12 @@
             background: white;
             animation: fadeInUp 0.5s ease;
         }
-        
+
         .skill-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
+
         .skill-category {
             color: var(--primary-color);
             font-weight: 600;
@@ -162,23 +171,23 @@
             text-align: center;
             font-size: 1.5rem;
         }
-        
+
         .skill-list {
             list-style-type: none;
             padding-left: 0;
         }
-        
+
         .skill-list li {
             margin-bottom: 15px;
             position: relative;
             padding-left: 25px;
             transition: all 0.3s ease;
         }
-        
+
         .skill-list li:hover {
             transform: translateX(5px);
         }
-        
+
         .skill-list li:before {
             content: "\f00c";
             font-family: "Font Awesome 6 Free";
@@ -187,8 +196,10 @@
             left: 0;
             color: var(--primary-color);
         }
-        
-        .project-card, .education-card, .experience-card {
+
+        .project-card,
+        .education-card,
+        .experience-card {
             border: none;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -198,49 +209,67 @@
             background: white;
             animation: fadeInUp 0.5s ease;
         }
-        
-        .project-card:hover, .education-card:hover, .experience-card:hover {
+
+        .project-card:hover,
+        .education-card:hover,
+        .experience-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
-        .project-card .card-body, .education-card .card-body, .experience-card .card-body {
+
+        .project-card .card-body,
+        .education-card .card-body,
+        .experience-card .card-body {
             padding: 30px;
         }
-        
-        .project-card .card-title, .education-card .card-title, .experience-card .card-title {
+
+        .project-card .card-title,
+        .experience-card .card-title {
             color: var(--secondary-color);
             font-weight: 600;
         }
-        
-        .education-card .card-subtitle, .experience-card .card-subtitle {
+
+        .education-card .card-title {
+            color: var(--secondary-color);
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .experience-card .card-subtitle {
             color: var(--primary-color);
             font-weight: 500;
             margin-bottom: 15px;
         }
-        
+
+        .education-card .card-subtitle {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
         .project-card .badge {
             background-color: var(--primary-color);
             margin-right: 5px;
             margin-bottom: 5px;
             transition: all 0.3s ease;
         }
-        
+
         .project-card .badge:hover {
             transform: scale(1.05);
         }
-        
+
         .contact-info {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
             transition: all 0.3s ease;
         }
-        
+
         .contact-info:hover {
             transform: translateX(5px);
         }
-        
+
         .contact-info i {
             width: 40px;
             height: 40px;
@@ -253,12 +282,12 @@
             margin-right: 15px;
             transition: all 0.3s ease;
         }
-        
+
         .contact-info:hover i {
             background: var(--secondary-color);
             transform: rotate(15deg);
         }
-        
+
         footer {
             background-color: var(--secondary-color);
             color: white;
@@ -266,7 +295,7 @@
             text-align: center;
             position: relative;
         }
-        
+
         .social-icons a {
             color: white;
             margin: 0 10px;
@@ -274,12 +303,12 @@
             transition: all 0.3s ease;
             display: inline-block;
         }
-        
+
         .social-icons a:hover {
             color: var(--primary-color);
             transform: translateY(-5px);
         }
-        
+
         .back-to-top {
             position: fixed;
             bottom: 20px;
@@ -299,34 +328,35 @@
             z-index: 999;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-        
+
         .back-to-top.active {
             opacity: 1;
             visibility: visible;
         }
-        
+
         .back-to-top:hover {
             background: var(--secondary-color);
             transform: translateY(-5px);
         }
-        
+
         /* Additional styles for education cards */
         .education-icon {
             font-size: 2rem;
             color: var(--primary-color);
             margin-bottom: 15px;
             transition: all 0.3s ease;
+            text-align: center;
         }
-        
+
         .education-card:hover .education-icon {
             transform: scale(1.2);
         }
-        
+
         .education-date {
             color: #6c757d;
             font-style: italic;
         }
-        
+
         /* Form styles */
         .form-control {
             border-radius: 5px;
@@ -334,51 +364,59 @@
             padding: 10px 15px;
             transition: all 0.3s ease;
         }
-        
+
         .form-control:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
         }
-        
+
         /* Animations */
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
-        
+
         @keyframes fadeInDown {
             from {
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes fadeInLeft {
             from {
                 opacity: 0;
                 transform: translateX(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
         }
-        
+
         /* Experience card specific styles */
         .experience-icon {
             font-size: 2rem;
@@ -386,67 +424,70 @@
             margin-bottom: 15px;
             transition: all 0.3s ease;
         }
-        
+
         .experience-card:hover .experience-icon {
             transform: rotate(15deg);
         }
-        
+
         /* Responsive adjustments */
         @media (max-width: 992px) {
             section {
                 padding: 60px 0;
             }
-            
+
             .hero {
                 padding: 100px 0 80px;
             }
         }
-        
+
         @media (max-width: 768px) {
             section {
                 padding: 50px 0;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero p {
                 font-size: 1.1rem;
             }
-            
+
             .section-title {
                 margin-bottom: 40px;
             }
         }
-        
+
         @media (max-width: 576px) {
             .hero {
                 padding: 80px 0 60px;
             }
-            
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
-            .btn-primary, .btn-outline-light {
+
+            .btn-primary,
+            .btn-outline-light {
                 display: block;
                 width: 100%;
                 margin-bottom: 10px;
             }
-            
+
             .btn-outline-light {
                 margin-left: 0;
             }
         }
     </style>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">Shivam Bhaskar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -481,11 +522,14 @@
     <section id="home" class="hero">
         <div class="container">
             <h1>Hi, I'm <br>Shivam Bhaskar</h1>
-            <p>Java Developer specializing in Spring Boot, REST APIs, and SQL. Passionate about building efficient, scalable applications with strong foundations in data structures and OOP.</p>
+            <p>Java Developer specializing in Spring Boot, REST APIs, and SQL. Passionate about building efficient,
+                scalable applications with strong foundations in data structures and OOP.</p>
             <div class="mt-4">
-                <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
-                <a href="#projects" class="btn btn-outline-light btn-lg">View My Work</a>
-                <a href="https://drive.google.com/drive/folders/15nY06VkDZbQQSeo4qGBCA7XAtO4ld52r?usp=drive_link" class="btn btn-primary btn-lg">View CV</a>
+                <a href="#contact" class="btn btn-primary btn-lg" id="contact-btn">Contact Me</a>
+                <a href="#projects" class="btn btn-outline-light btn-lg" id="projects-btn">View My Work</a>
+                <a href="https://drive.google.com/drive/folders/15nY06VkDZbQQSeo4qGBCA7XAtO4ld52r?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg ms-2" id="cv-btn">View CV
+                </a>
             </div>
         </div>
     </section>
@@ -497,8 +541,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h3>Java Developer & Problem Solver</h3>
-                    <p>Recent graduate with expertise in Java Development, specializing in Java, Spring Boot, and SQL. Proficient in data structures, object-oriented programming.</p>
-                    <p>Hands-on experience in developing applications and RESTful APIs. Currently training at QSpiders Bangalore, gaining practical exposure to software engineering principles and Agile methodologies.</p>
+                    <p>Recent graduate with expertise in Java Development, specializing in Java, Spring Boot, and SQL.
+                        Proficient in data structures, object-oriented programming.</p>
+                    <p>Hands-on experience in developing applications and RESTful APIs. Currently training at QSpiders
+                        Bangalore, gaining practical exposure to software engineering principles and Agile
+                        methodologies.</p>
                     <p>Solved 100+ Data Structures and Algorithms problems on various coding platforms.</p>
                     <div class="row mt-4">
                         <div class="col-md-6">
@@ -516,7 +563,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <img src="./profile.jpg" alt="Profile Image of Shivam Bhaskar" class="img-fluid rounded-circle shadow-lg" loading="lazy">
+                    <img src="./profile.jpg" alt="Shivam Bhaskar Profile Picture"
+                        class="img-fluid rounded-circle shadow-lg" loading="lazy">
                 </div>
             </div>
         </div>
@@ -541,7 +589,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!-- Backend Development Card -->
                 <div class="col-md-4">
                     <div class="skill-card">
@@ -558,7 +606,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!-- Database & Tools Card -->
                 <div class="col-md-4">
                     <div class="skill-card">
@@ -591,10 +639,11 @@
                                 <span class="badge">Spring Boot</span>
                                 <span class="badge">JPA/Hibernate</span>
                                 <span class="badge">PostgreSQL</span>
-                                <span class="badge">REST API</span>
+                                <span class="badge">REST APIs</span>
                             </div>
                             <p class="card-text">
-                                A comprehensive movie ticket booking system with seat selection, payment processing, and admin dashboard.
+                                A comprehensive movie ticket booking system with seat selection, payment processing, and
+                                admin dashboard.
                             </p>
                             <ul>
                                 <li>Implemented 30+ RESTful APIs with proper validation and status tracking</li>
@@ -603,13 +652,15 @@
                                 <li>Applied global exception handling for system reliability</li>
                             </ul>
                             <div class="mt-3">
-                                <a href="https://github.com/shivambhaskar562/moviefixer-backend" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                                <a href="https://movie-fixer-booking.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Go Live</a>
+                                <a href="https://github.com/shivambhaskar562/moviefixer-backend" class="btn btn-primary"
+                                    target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                                <a href="https://movie-fixer-booking.vercel.app/" class="btn btn-primary"
+                                    target="_blank" rel="noopener noreferrer">Go Live</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 2 -->
                 <div class="col-lg-6">
                     <div class="project-card card">
@@ -632,7 +683,8 @@
                                 <li>Developed comprehensive account management features</li>
                             </ul>
                             <div class="mt-3">
-                                <a href="https://github.com/shivambhaskar562/bankingManagementSystem" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                                <a href="https://github.com/shivambhaskar562/bankingManagementSystem"
+                                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -644,7 +696,7 @@
     <!-- Experience Section -->
     <section id="experience">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
+            <h2 class="section-title">Traning & Work Experience</h2>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="experience-card">
@@ -681,14 +733,16 @@
                             <div class="education-icon">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
-                            <h4 class="card-title">Bachelor of Engineering</h4>
-                            <h5 class="card-subtitle">Sant Longowal Institute of Engineering and Technology (SLIET)</h5>
-                            <p class="education-date">Electronics and Communication | CGPA: 6.88</p>
-                            <p>Completed comprehensive coursework in electronics and communication engineering with a focus on practical applications and theoretical foundations.</p>
+                            <h4 class="card-title">Bachelor of Engineering in</h4>
+                            <h5 class="card-title">Electronics and Communication</h5>
+                            <h5 class="card-subtitle">Sant Longowal Institute of Engineering and Technology</h5>
+                            <p class="education-date">July 2021 - June 2024 | Grade: 6.88</p>
+                            <p>Completed comprehensive coursework in electronics and communication engineering with a
+                                focus on practical applications and theoretical foundations.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Diploma Card -->
                 <div class="col-md-4">
                     <div class="education-card">
@@ -696,14 +750,16 @@
                             <div class="education-icon">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
-                            <h4 class="card-title">Diploma</h4>
-                            <h5 class="card-subtitle">Sant Longowal Institute of Engineering and Technology (SLIET)</h5>
-                            <p class="education-date">Electronics and Communication | CGPA: 7.79</p>
-                            <p>Gained foundational knowledge in electronics and communication systems through hands-on training and coursework.</p>
+                            <h4 class="card-title">Diploma in</h4>
+                            <h5 class="card-title">Electronics</h5>
+                            <h5 class="card-subtitle">Sant Longowal Institute of Engineering and Technology</h5>
+                            <p class="education-date">July 2018 - July 2021 | CGPA: 7.79</p>
+                            <p>Gained foundational knowledge in electronics and communication systems through hands-on
+                                training and coursework.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Matriculation Card -->
                 <div class="col-md-4">
                     <div class="education-card">
@@ -712,8 +768,9 @@
                                 <i class="fas fa-school"></i>
                             </div>
                             <h4 class="card-title">Matriculation</h4>
-                            <h5 class="card-subtitle">Sri Mahavir Tirthankar High School, Vaishali</h5>
-                            <p class="education-date">Grade: 57.60%</p>
+                            <h5 class="card-title">All Subjects</h5>
+                            <h5 class="card-subtitle">Sri Mahavir Tirthankar High School</h5>
+                            <p class="education-date">Martch 2017 - May 2018 | Grade: 57.60%</p>
                             <p>Completed secondary education with focus on science and mathematics fundamentals.</p>
                         </div>
                     </div>
@@ -753,40 +810,50 @@
                         <i class="fab fa-linkedin"></i>
                         <div>
                             <h5>LinkedIn:</h5>
-                            <p><a href="https://www.linkedin.com/in/shivambhaskar56" target="_blank" rel="noopener noreferrer">linkedin.com/in/shivambhaskar56</a></p>
+                            <p><a href="https://www.linkedin.com/in/shivambhaskar56" target="_blank"
+                                    rel="noopener noreferrer">linkedin.com/in/shivambhaskar56</a></p>
                         </div>
                     </div>
                     <div class="contact-info">
                         <i class="fab fa-github"></i>
                         <div>
                             <h5>GitHub:</h5>
-                            <p><a href="https://github.com/shivambhaskar562" target="_blank" rel="noopener noreferrer">github.com/shivambhaskar562</a></p>
+                            <p><a href="https://github.com/shivambhaskar562" target="_blank"
+                                    rel="noopener noreferrer">github.com/shivambhaskar562</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
                         <input type="hidden" name="access_key" value="fbf25bf0-7c88-4b5d-aaaa-8eb6851abd06">
-                        <input type="hidden" name="subject" value="Contact Form Portfolio">
-                        <input type="checkbox" name="botcheck" id="" style="display: none;">
-                        
+                        <input type="checkbox" name="botcheck" id="botcheck" style="display: none;">
+
                         <div class="row">
                             <div class="col-md-6 form-group mb-3">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name"
+                                    required>
                             </div>
                             <div class="col-md-6 form-group mb-3">
-                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject"
+                                required>
                         </div>
                         <div class="form-group mb-3">
-                            <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="6" placeholder="Message"
+                                required></textarea>
                         </div>
                         <div class="h-captcha" data-captcha="true"></div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="btn btn-primary" aria-label="Send message">Send
+                                Message</button>
                         </div>
                     </form>
                 </div>
@@ -800,18 +867,20 @@
             <h3>Shivam Bhaskar</h3>
             <p>Java Developer | Spring Boot | REST APIs | SQL</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/shivambhaskar56" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/shivambhaskar562" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:shivambhaskar562@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/shivambhaskar56" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/shivambhaskar562" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                <a href="mailto:shivambhaskar562@gmail.com" aria-label="Send email"><i class="fas fa-envelope"></i></a>
             </div>
             <div class="copyright mt-3">
-                &copy; Copyright <strong>2024</strong>. All Rights Reserved
+                &copy; Copyright <strong>2025</strong>. All Rights Reserved
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -821,7 +890,7 @@
     <script>
         // Back to top button
         const backToTopButton = document.querySelector('.back-to-top');
-        
+
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('active');
@@ -829,7 +898,7 @@
                 backToTopButton.classList.remove('active');
             }
         });
-        
+
         // Navbar scroll effect
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
@@ -839,21 +908,30 @@
                 navbar.classList.remove('scrolled');
             }
         });
-        
-        // Smooth scrolling for navigation links
+
+        // Enhanced smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 70,
                         behavior: 'smooth'
                     });
-                    
+
+                    // Update URL without page jump
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        window.location.hash = targetId;
+                    }
+
                     // Close mobile menu if open
                     const navbarCollapse = document.querySelector('.navbar-collapse');
                     if (navbarCollapse.classList.contains('show')) {
@@ -862,17 +940,44 @@
                 }
             });
         });
-        
+
+        // Ensure hero section buttons work
+        document.getElementById('contact-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        document.getElementById('projects-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        // Verify Google Drive link is accessible
+        document.getElementById('cv-btn').addEventListener('click', function (e) {
+            // You can add any pre-click logic here
+            console.log('CV link clicked');
+        });
+
         // Form submission
         const contactForm = document.getElementById('contact-form');
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                // Web3Forms will handle the submission
-                // You can add any additional client-side validation here if needed
+            contactForm.addEventListener('submit', function (e) {
                 const submitButton = this.querySelector('button[type="submit"]');
                 submitButton.disabled = true;
                 submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
-                
+
                 setTimeout(() => {
                     submitButton.innerHTML = 'Message Sent!';
                     setTimeout(() => {
@@ -883,23 +988,24 @@
                 }, 1500);
             });
         }
-        
+
         // Initialize animations when elements come into view
         const animateOnScroll = () => {
             const elements = document.querySelectorAll('.section-title, .skill-card, .project-card, .education-card, .experience-card');
-            
+
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.2;
-                
+
                 if (elementPosition < screenPosition) {
                     element.style.animation = 'fadeInUp 0.5s ease forwards';
                 }
             });
         };
-        
+
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('load', animateOnScroll);
     </script>
 </body>
+
 </html>
